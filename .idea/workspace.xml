@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="" />
+    <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/find-players-with-zero-or-one-loss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/smallest-number-in-infinite-set" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/unique-number-of-occurrences" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/word-pattern" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/String/detect-capital" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/String/maximum_swap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/String/string-compression" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/Backtracking/combination-sum" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Backtracking/combination-sum" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
