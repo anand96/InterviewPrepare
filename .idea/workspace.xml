@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/binary-trees-with-factors" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/restore-the-array-from-adjacent-pairs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/count-nice-pairs-in-an-array" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
