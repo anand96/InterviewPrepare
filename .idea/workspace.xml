@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/count-nice-pairs-in-an-array" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/check-if-array-pairs-are-divisible-by-k" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/replace-words" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
