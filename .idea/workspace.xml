@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/check-if-array-pairs-are-divisible-by-k" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/HashMap/replace-words" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/KMP/kmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/SlidingWindow/GFG-Count-Occurences-of-anagrams" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/SlidingWindow/count-subarrays-with-fixed-bound" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/SlidingWindow/k-radius-subarray-averages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/SlidingWindow/maximum-number-of-vowels-in-a-substring-of-given-length" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/SlidingWindow/minimum-size-subarray-summinimum-size-subarray-sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/SlidingWindow/minimum-window-substring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
