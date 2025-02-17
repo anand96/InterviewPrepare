@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/CourseSchedule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/KahnAlgorithm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/Dijkstra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/alien-dictionary" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/cheapest-flights-within-k-stops" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/path-with-minimum-effort" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/shortest-path-in-weighted-undirected-graph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
