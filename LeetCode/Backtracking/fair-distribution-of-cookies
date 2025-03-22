@@ -1,3 +1,4 @@
+
 public class Solution {
     public int distributeCookies(int[] cookies, int k) {
         int[] children = new int[k]; // Array to track cookie counts for each child

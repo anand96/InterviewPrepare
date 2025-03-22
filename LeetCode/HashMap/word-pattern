@@ -24,7 +24,7 @@ class Solution{
                 }
             }
             charToWord(c, word);
-            wordToChar(word, c);
+            wordToChar(word, c);00.0
         }
         return true;
     }

@@ -1,49 +1,43 @@
-class Solution{
-    private int result =0;
-    private int emptySquare =0;
+class Solution {
+    public int uniquePathsIII(int[][] grid) {
+        int row = grid.length;
+        int col = grid[0].length;  // Fix column length
 
-    public int uniquePathsIII(int[][] grid)
-    {
-        int startRow =0,startCol =0;
+        int num_occurance = 0;
+        int start_i = -1, start_j = -1; // Initialize variables
 
-        for(int i=0;i<grid.length;i++)
-        {
-            for(int j=0;j<grid[0].length;j++)
-            {
-                if(grid[i][j] == 0)
-                emptySquare++;
-                else if(grid[i][j] ==1)
-                {
-                    startRow =i;
-                    startCol =j;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (grid[i][j] == 0 || grid[i][j] == 1)
+                    num_occurance++;  // Count empty cells and start cell
+
+                if (grid[i][j] == 1) {
+                    start_i = i;
+                    start_j = j;
                 }
             }
         }
-        dfs(grid, startRow, startCol, -1)
-        return result;
+        return dfs(grid, start_i, start_j, num_occurance, 0);
     }
 
-    private void dfs(int[][] grid, int row,int col, int count){
-        if(row<0 || col <0 || row>=grid.length || col>=grid[0].length || grid[row][col] ==-1)
-            return;
+    private int dfs(int[][] grid, int i, int j, int num_occurrance, int count) {
+        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] == -1)
+            return 0;  // Out of bounds or obstacle
 
-        if(grid[row][col]==2)
-        {
-            if(count==emptySquare)
-                result++;
-            return;
+        if (grid[i][j] == 2) {
+            return (count == num_occurrance) ? 1 : 0; // Check if all squares are visited
         }
 
-        int temp = grid[row][col];
-        grid[row][col] = -1;
+        int temp = grid[i][j];
+        grid[i][j] = -1; // Mark as visited
 
-        dfs(grid, row+1, col, count+1);
-        dfs(grid, row-1, col, count+1);
-        dfs(grid, row, col+1; count+1);
-        dfs(grid, row, col-1, count+1);
+        int ans = dfs(grid, i + 1, j, num_occurrance, count + 1) +
+                  dfs(grid, i - 1, j, num_occurrance, count + 1) +
+                  dfs(grid, i, j + 1, num_occurrance, count + 1) +
+                  dfs(grid, i, j - 1, num_occurrance, count + 1);
 
-        grid[row][col] = temp;
+        grid[i][j] = temp; // Restore the grid state
 
-
+        return ans;
     }
 }
