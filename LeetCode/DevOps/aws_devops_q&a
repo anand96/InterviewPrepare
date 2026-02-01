@@ -1,0 +1,345 @@
+# 100 Most Asked AWS Interview Questions with Answers (Senior DevOps)
+
+---
+
+## 1. AWS Basics
+
+**Q1. What is AWS and why is it popular?**
+A: Amazon Web Services, a leading cloud provider, popular due to scalability, pay-as-you-go pricing, global reach, and broad services.
+
+**Q2. What are AWS Regions and Availability Zones (AZs)?**
+A: Regions = geographic areas, AZs = isolated data centers within regions for high availability.
+
+**Q3. Difference between On-demand, Reserved, and Spot instances.**
+A: On-demand = pay per use, Reserved = 1-3 year commitment with discount, Spot = unused capacity at lower cost.
+
+**Q4. What is AWS Free Tier?**
+A: Limited usage of services free for 12 months after account creation.
+
+**Q5. How do you ensure high availability in AWS?**
+A: Use multiple AZs, ELB, Auto Scaling, Multi-AZ RDS.
+
+**Q6. Difference between Scalability and Elasticity in AWS.**
+A: Scalability = system can grow, Elasticity = auto-adjust resources based on demand.
+
+**Q7. What is AWS Well-Architected Framework?**
+A: Best practices grouped into 6 pillars: Operational Excellence, Security, Reliability, Performance, Cost Optimization, Sustainability.
+
+**Q8. How do you monitor costs in AWS?**
+A: AWS Cost Explorer, Budgets, CloudWatch, Trusted Advisor.
+
+**Q9. What are IAM policies in AWS?**
+A: JSON documents defining permissions for users, groups, or roles.
+
+**Q10. How do you secure AWS root account?**
+A: Enable MFA, don’t use root for daily tasks, create IAM admin user.
+
+---
+
+## 2. Compute (EC2, Auto Scaling, Lambda)
+
+**Q11. What is Amazon EC2?**
+A: Elastic Compute Cloud, provides resizable virtual servers.
+
+**Q12. What are EC2 instance types?**
+A: General Purpose, Compute Optimized, Memory Optimized, Storage Optimized, Accelerated Computing.
+
+**Q13. What is AMI?**
+A: Amazon Machine Image, a template for launching EC2 instances.
+
+**Q14. What is EBS and its types?**
+A: Elastic Block Store, persistent storage. Types: gp3, io2, st1, sc1.
+
+**Q15. Difference between EBS and Instance Store.**
+A: EBS = persistent, Instance Store = temporary, tied to lifecycle of instance.
+
+**Q16. What is EC2 Auto Scaling?**
+A: Automatically increases or decreases instances based on demand.
+
+**Q17. Difference between vertical and horizontal scaling in AWS.**
+A: Vertical = increase instance size, Horizontal = add more instances.
+
+**Q18. What is Elastic Load Balancer (ELB)?**
+A: Distributes incoming traffic across multiple instances.
+
+**Q19. What are Lambda functions?**
+A: Serverless compute that runs code without managing servers, billed per request and runtime.
+
+**Q20. What are Lambda execution roles?**
+A: IAM roles that grant Lambda permissions to interact with AWS services.
+
+---
+
+## 3. Storage (S3, EFS, Glacier)
+
+**Q21. What is Amazon S3?**
+A: Object storage service with 11 9’s durability.
+
+**Q22. What are S3 storage classes?**
+A: Standard, IA, One Zone-IA, Glacier, Glacier Deep Archive, Intelligent-Tiering.
+
+**Q23. Difference between S3 and EBS.**
+A: S3 = object storage, EBS = block storage.
+
+**Q24. What are S3 buckets and objects?**
+A: Bucket = container, Object = file with metadata.
+
+**Q25. How do you secure S3 buckets?**
+A: Use IAM policies, bucket policies, block public access, encryption.
+
+**Q26. Difference between SSE-S3, SSE-KMS, and SSE-C encryption.**
+A: S3 managed keys, AWS KMS-managed keys, Customer-provided keys.
+
+**Q27. What is S3 versioning?**
+A: Keeps multiple versions of an object in a bucket.
+
+**Q28. How does S3 lifecycle policy work?**
+A: Automatically transitions or expires objects based on rules.
+
+**Q29. What is Amazon EFS?**
+A: Elastic File System, scalable shared file storage.
+
+**Q30. What is Amazon Glacier?**
+A: Low-cost archival storage with retrieval times (minutes to hours).
+
+---
+
+## 4. Databases
+
+**Q31. What is Amazon RDS?**
+A: Managed relational database service (supports MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Aurora).
+
+**Q32. Difference between RDS and Aurora.**
+A: Aurora is AWS proprietary, faster, highly available, MySQL/PostgreSQL-compatible.
+
+**Q33. What is Multi-AZ RDS deployment?**
+A: Provides synchronous standby replica in another AZ for HA.
+
+**Q34. Difference between Read Replica and Multi-AZ.**
+A: Read Replica = for scaling reads, Multi-AZ = for HA.
+
+**Q35. What is DynamoDB?**
+A: NoSQL managed key-value/document database.
+
+**Q36. What is DynamoDB DAX?**
+A: In-memory cache for DynamoDB, improves read performance.
+
+**Q37. What is Amazon Redshift?**
+A: Data warehousing service for analytics.
+
+**Q38. Difference between RDS and DynamoDB.**
+A: RDS = SQL-based relational, DynamoDB = NoSQL.
+
+**Q39. What is Amazon ElastiCache?**
+A: Managed Redis/Memcached service.
+
+**Q40. What is Amazon Neptune?**
+A: Managed graph database service.
+
+---
+
+## 5. Networking
+
+**Q41. What is VPC?**
+A: Virtual Private Cloud, isolated network environment within AWS.
+
+**Q42. What are subnets?**
+A: Subdivisions of a VPC, can be public or private.
+
+**Q43. Difference between Security Groups and NACLs.**
+A: SG = stateful, instance-level, NACL = stateless, subnet-level.
+
+**Q44. What is an Internet Gateway?**
+A: Enables communication between VPC and internet.
+
+**Q45. What is a NAT Gateway?**
+A: Allows private instances to access internet while remaining unreachable from outside.
+
+**Q46. Difference between Route 53 and ELB.**
+A: Route 53 = DNS service, ELB = traffic distribution.
+
+**Q47. What are VPC Peering and Transit Gateway?**
+A: Peering = connect two VPCs, Transit Gateway = hub for connecting multiple VPCs.
+
+**Q48. What is Direct Connect?**
+A: Dedicated private network connection from on-prem to AWS.
+
+**Q49. What is AWS Global Accelerator?**
+A: Improves performance by routing traffic through AWS global network.
+
+**Q50. What is PrivateLink?**
+A: Provides private connectivity between VPCs and AWS services without using public IPs.
+
+---
+
+## 6. Security & IAM
+
+**Q51. What is IAM?**
+A: Identity and Access Management for users, groups, and roles.
+
+**Q52. What are IAM roles?**
+A: Temporary credentials for AWS services or federated users.
+
+**Q53. Difference between IAM role and IAM user.**
+A: User = permanent credentials, Role = temporary credentials.
+
+**Q54. What is AWS Organizations?**
+A: Service for managing multiple AWS accounts centrally.
+
+**Q55. What are SCPs (Service Control Policies)?**
+A: Policies at org/account level that restrict IAM permissions.
+
+**Q56. What is AWS KMS?**
+A: Key Management Service for encryption keys.
+
+**Q57. Difference between CMK and Data Key in KMS.**
+A: CMK = master key, Data Key = used for actual encryption.
+
+**Q58. What is AWS Shield?**
+A: DDoS protection service.
+
+**Q59. What is AWS WAF?**
+A: Web Application Firewall for filtering malicious requests.
+
+**Q60. How do you enforce MFA for AWS users?**
+A: Enable MFA in IAM and enforce via IAM policies.
+
+---
+
+## 7. Monitoring & Logging
+
+**Q61. What is Amazon CloudWatch?**
+A: Monitoring service for metrics, logs, and events.
+
+**Q62. Difference between CloudWatch and CloudTrail.**
+A: CloudWatch = monitoring, CloudTrail = audit logs of API calls.
+
+**Q63. What are CloudWatch Alarms?**
+A: Notifications triggered when metrics cross thresholds.
+
+**Q64. What is AWS X-Ray?**
+A: Distributed tracing for debugging microservices.
+
+**Q65. What is AWS Trusted Advisor?**
+A: Provides best practices for cost, performance, security.
+
+**Q66. What are VPC Flow Logs?**
+A: Capture IP traffic metadata for VPC.
+
+**Q67. What is CloudTrail Lake?**
+A: Centralized queryable storage for audit logs.
+
+**Q68. What is AWS Config?**
+A: Tracks configuration changes of AWS resources.
+
+**Q69. What is AWS GuardDuty?**
+A: Threat detection service using machine learning.
+
+**Q70. What is AWS Inspector?**
+A: Automated vulnerability assessment.
+
+---
+
+## 8. DevOps & CI/CD
+
+**Q71. What is AWS CodePipeline?**
+A: CI/CD orchestration service.
+
+**Q72. Difference between CodeBuild and CodeDeploy.**
+A: CodeBuild = build/test, CodeDeploy = deploy to servers/instances.
+
+**Q73. What is Elastic Beanstalk?**
+A: PaaS service for deploying applications quickly.
+
+**Q74. What is AWS SAM?**
+A: Serverless Application Model for Lambda-based applications.
+
+**Q75. What is AWS CloudFormation?**
+A: Infrastructure as Code service using YAML/JSON templates.
+
+**Q76. Difference between CloudFormation and Terraform.**
+A: CloudFormation = AWS-native, Terraform = multi-cloud.
+
+**Q77. What is AWS CodeArtifact?**
+A: Artifact repository for software packages.
+
+**Q78. What is Blue/Green deployment in AWS?**
+A: Deploy new version alongside old and switch traffic.
+
+**Q79. What is Canary deployment?**
+A: Release to small % of traffic before full rollout.
+
+**Q80. What is AWS OpsWorks?**
+A: Configuration management service using Chef/Puppet.
+
+---
+
+## 9. Advanced & Hybrid Cloud
+
+**Q81. What is AWS Outposts?**
+A: AWS infrastructure deployed on-prem.
+
+**Q82. What is AWS Snowball?**
+A: Data transfer appliance for large migrations.
+
+**Q83. What is AWS Snowmobile?**
+A: Truck-sized data transfer solution for exabytes of data.
+
+**Q84. What is AWS Storage Gateway?**
+A: Hybrid storage integration between on-prem and AWS.
+
+**Q85. What is AWS Local Zones?**
+A: Extension of AWS region closer to end users.
+
+**Q86. What is AWS Wavelength?**
+A: Brings AWS services to telecom 5G networks.
+
+**Q87. Difference between CloudFront and Global Accelerator.**
+A: CloudFront = CDN caching, GA = network routing acceleration.
+
+**Q88. What is AWS Batch?**
+A: Managed batch processing service.
+
+**Q89. What is AWS Step Functions?**
+A: Workflow orchestration for microservices and Lambda.
+
+**Q90. What is AWS Glue?**
+A: Managed ETL (Extract, Transform, Load) service.
+
+---
+
+## 10. Real-world Scenarios
+
+**Q91. How do you migrate on-prem workloads to AWS?**
+A: Use AWS Migration Hub, DMS, SMS, Snowball.
+
+**Q92. How do you troubleshoot high EC2 CPU usage?**
+A: Check CloudWatch metrics, processes, resize instance, use Auto Scaling.
+
+**Q93. How do you handle sudden S3 access denied errors?**
+A: Check IAM/bucket policies, ACLs, encryption, block public access.
+
+**Q94. How do you troubleshoot VPC connectivity issues?**
+A: Verify routes, SGs, NACLs, NAT/IGW setup, Flow Logs.
+
+**Q95. How do you recover from accidental RDS deletion?**
+A: Restore from automated snapshots or point-in-time recovery.
+
+**Q96. How do you analyze unexpected AWS bill spikes?**
+A: Check Cost Explorer, identify services, use Budgets/Alerts.
+
+**Q97. How do you reduce AWS cost in DevOps workloads?**
+A: Use Auto Scaling, Reserved/Spot instances, rightsizing, S3 lifecycle, Savings Plans.
+
+**Q98. How do you secure multi-account AWS environments?**
+A: AWS Organizations, SCPs, centralized IAM, CloudTrail.
+
+**Q99. How do you ensure compliance (HIPAA, GDPR) on AWS?**
+A: Use AWS compliance programs, encrypt data, enable logging, follow security best practices.
+
+**Q100. How do you design HA multi-region architecture in AWS?**
+A: Use Route 53 latency-based routing, Multi-Region RDS/Aurora, S3 cross-region replication, Global Accelerator.
+
+---
+
+✅ This file covers **100 AWS interview questions with answers** tailored for **Senior DevOps Engineer interviews**.

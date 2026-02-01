@@ -1,0 +1,64 @@
+Best Solution
+
+
+// Recursive + Memoized solution
+O(n)
+class Solution {
+    int total;
+
+    int slices(int[] nums, int i, int[] dp) {
+        if (i < 2) return 0;
+
+        if (dp[i] != -1) return dp[i];
+
+        if (nums[i] - nums[i - 1] == nums[i - 1] - nums[i - 2]) {
+            dp[i] = 1 + slices(nums, i - 1, dp);
+            total += dp[i];
+        } else {
+            dp[i] = 0;
+            slices(nums, i - 1, dp);
+        }
+
+        return dp[i];
+    }
+
+    public int numberOfArithmeticSlices(int[] nums) {
+        int n = nums.length;
+        if (n < 3) return 0;
+
+        total = 0;
+        int[] dp = new int[n];
+        Arrays.fill(dp, -1);
+
+        slices(nums, n - 1, dp);
+        return total;
+    }
+}
+
+
+
+// O(n)
+This is an optimized solution
+class Solution {
+    public int numberOfArithmeticSlices(int[] nums) {
+        int n = nums.length;
+        if(n<3)
+        {
+            return 0;
+        }
+        int dp =0;
+        int ans =0;
+
+        for(int i=2;i<n;i++)
+        {
+            if(nums[i]-nums[i-1] == nums[i-1]-nums[i-2])
+            {
+                dp++;
+                ans += dp;
+            }else{
+                dp=0;
+            }
+        }
+        return ans;
+    }
+}

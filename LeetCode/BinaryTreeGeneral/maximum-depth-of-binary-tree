@@ -30,6 +30,6 @@ class Solution{
         int left_size = calculate(root.left);
         int right_size = calculate(root.right);
 
-        return left_size > right_size ? left_size + 1 : right_size +1;
+        return left_size > right_size ? left_size + 1 : right_size + 1;
     }
 }

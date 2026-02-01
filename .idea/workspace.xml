@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e389c2e-6d1e-4947-85d5-0d4b3dff2ad5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/Dijkstra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/alien-dictionary" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/cheapest-flights-within-k-stops" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/path-with-minimum-effort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/shortest-path-in-weighted-undirected-graph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Graph/wordLadder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/Backtracking/combination-sum" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Backtracking/combination-sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/BinaryTreeGeneral/invert-binary-tree" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/BinaryTreeGeneral/invert-binary-tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/BinaryTreeGeneral/maximum-depth-of-binary-tree" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/BinaryTreeGeneral/maximum-depth-of-binary-tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/BinaryTreeGeneral/same-tree" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/BinaryTreeGeneral/same-tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/DynamicProgramming/longest-increasing-subsequenc" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/DynamicProgramming/longest-increasing-subsequenc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/DynamicProgramming/longest-palindromic-substring" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/DynamicProgramming/longest-palindromic-substring" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/LeetCode/Graph/mutli-source-bfs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/HashMap/smallest-number-in-infinite-set" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/HashMap/unique-number-of-occurrences" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/HashMap/word-pattern" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Heap/find-median-from-data-stream" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Heap/top-k-frequent-elements" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
